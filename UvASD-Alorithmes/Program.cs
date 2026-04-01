@@ -102,6 +102,12 @@ namespace UvASD_Algorithmes
             SelectionSort.SelectionSort2(Array3);
             Console.WriteLine(String.Join(" ", Array3));
 
+            int[] Array4 = new int[7] { -3, 19, -5, 13, 48, 7, 9 };
+            Console.WriteLine();
+            DisplayArrayData(Array4);
+            Array4 = MergeSortClass.MergeSort(Array4);
+            Console.WriteLine(String.Join(" ", Array4));
+
             Console.ReadKey();
         }
     }
