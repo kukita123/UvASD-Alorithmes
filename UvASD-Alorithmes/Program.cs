@@ -19,7 +19,6 @@ namespace UvASD_Algorithmes
 
             return array;
         }
-
         static void EnterArrayData(int[] array)
         {
             for (int i = 0; i < array.Length; i++)
@@ -28,7 +27,6 @@ namespace UvASD_Algorithmes
                 array[i] = int.Parse(Console.ReadLine());
             }
         }
-
         static bool IsContains(int[]array, int x)
         {
             for (int i = 0; i < array.Length; i++)
@@ -41,7 +39,6 @@ namespace UvASD_Algorithmes
 
             return false;
         }
-
         static int LinearSearch(int[]array, int x)
         {
             for (int i = 0; i < array.Length; i++)
@@ -53,7 +50,6 @@ namespace UvASD_Algorithmes
             }
             return -1;
         }
-
         static void DisplayArrayData(int[] array)
         {
             for (int i = 0; i < array.Length; i++)
@@ -61,7 +57,6 @@ namespace UvASD_Algorithmes
                 Console.WriteLine("Element[{0}] = {1}",i, array[i]);
             }
         }
-
         static bool IsChangeNeeded(int a, int b)
         {
             if (a > b)
@@ -69,14 +64,12 @@ namespace UvASD_Algorithmes
             return
                 false;
         }
-
         static void Swap(ref int a, ref int b)
         {
             int swap = a;
             a = b;
             b = swap;
         }
-
         static void Main(string[] args)
         {
             int[] Array1 = new int[10];
@@ -84,7 +77,7 @@ namespace UvASD_Algorithmes
             Console.WriteLine();
             DisplayArrayData(Array1);
             Console.WriteLine(IsContains(Array1, -13) ? "The array contains -13" : "The array doesn't contains -13");
-            //BubbleSort.BubbleSort1(Array1);
+            BubbleSort.BubbleSort1(Array1);
             SelectionSort.SelectionSort1(Array1);
             Console.WriteLine(String.Join(" ", Array1));
             
