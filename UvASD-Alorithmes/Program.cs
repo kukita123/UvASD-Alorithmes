@@ -72,14 +72,14 @@ namespace UvASD_Algorithmes
         }
         static void Main(string[] args)
         {
-            int[] Array1 = new int[10];
-            Array1 = CreateRandomDataArray(Array1);
-            Console.WriteLine();
-            DisplayArrayData(Array1);
-            Console.WriteLine(IsContains(Array1, -13) ? "The array contains -13" : "The array doesn't contains -13");
-            BubbleSort.BubbleSort1(Array1);
-            SelectionSort.SelectionSort1(Array1);
-            Console.WriteLine(String.Join(" ", Array1));
+            //int[] Array1 = new int[10];
+            //Array1 = CreateRandomDataArray(Array1);
+            //Console.WriteLine();
+            //DisplayArrayData(Array1);
+            //Console.WriteLine(IsContains(Array1, -13) ? "The array contains -13" : "The array doesn't contains -13");
+            //BubbleSort.BubbleSort1(Array1);
+            //SelectionSort.SelectionSort1(Array1);
+            //Console.WriteLine(String.Join(" ", Array1));
             
             //int[] Array2 = new int[5];
             //Console.WriteLine();
@@ -87,18 +87,18 @@ namespace UvASD_Algorithmes
             //DisplayArrayData(Array2);
             //Console.WriteLine(IsContains(Array2, -13) ? "The array contains -13" : "The array doesn't contains -13");
 
-            int[] Array3 = new int[7] { -1, 9, 0, -13, 44, 6, 9 };
-            Console.WriteLine();
-            DisplayArrayData(Array3);
-            Console.WriteLine(IsContains(Array3, -13) ? "The array contains -13" : "The array doesn't contains -13");
-            //BubbleSort.BubbleSort2(Array3);
-            SelectionSort.SelectionSort2(Array3);
-            Console.WriteLine(String.Join(" ", Array3));
+            //int[] Array3 = new int[7] { -1, 9, 0, -13, 44, 6, 9 };
+            //Console.WriteLine();
+            //DisplayArrayData(Array3);
+            //Console.WriteLine(IsContains(Array3, -13) ? "The array contains -13" : "The array doesn't contains -13");
+            ////BubbleSort.BubbleSort2(Array3);
+            //SelectionSort.SelectionSort2(Array3);
+            //Console.WriteLine(String.Join(" ", Array3));
 
             int[] Array4 = new int[7] { -3, 19, -5, 13, 48, 7, 9 };
             Console.WriteLine();
             DisplayArrayData(Array4);
-            Array4 = MergeSortClass.MergeSort(Array4);
+            Array4 = InsertionSort.InsertionSortImplementation(Array4);
             Console.WriteLine(String.Join(" ", Array4));
 
             Console.ReadKey();

@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 namespace UvASD_Alorithmes
 {
     public class InsertionSort
-    {
-       
+    {       
            public static int[] InsertionSortImplementation(int[] array)
             {
                 for (int i = 0; i < array.Length; i++)
