@@ -9,17 +9,17 @@ namespace SearchingAlgorithmes
             for (int i = 0; i < array.Length; i++)
             {
                 if (array[i] == value)
-                    return i;
+                    return i; 
                 else
                     steps++;
             }            
             return -1;
         }
-        public static int BinarySearchRecursivly(int []array, int value)
+        public static int BinarySearchRecursivly(int []array, int value, ref int steps)
         {
-            return BinarySearchRecursivly(array, value, 0, array.Length - 1);
+            return BinarySearchRecursivly(array, value, 0, array.Length - 1, ref steps);
         }
-        private static int BinarySearchRecursivly(int[]array, int value, int left, int right)
+        private static int BinarySearchRecursivly(int[]array, int value, int left, int right, ref int steps)
         {
             if (right > left)
             {
@@ -27,14 +27,21 @@ namespace SearchingAlgorithmes
                 if (value == array[middle])
                     return middle;
                 if (value < array[middle])
-                    return BinarySearchRecursivly(array, value, 0, middle - 1);
+                {
+                    steps++;
+                    return BinarySearchRecursivly(array, value, 0, middle - 1, ref  steps); 
+                }
                 else
-                    return BinarySearchRecursivly(array, value, middle + 1, array.Length - 1);
+                {
+                    steps++;
+                    return BinarySearchRecursivly(array, value, middle + 1, array.Length - 1, ref steps);
+                }
+                    
         
             }
             return -1;            
         }
-        public static int BinarySearchItteratively(int[]array, int value)
+        public static int BinarySearchItteratively(int[]array, int value, ref int steps)
         {
             int left = 0;
             int right = array.Length - 1;
@@ -46,9 +53,15 @@ namespace SearchingAlgorithmes
                 if (value == array[middle])
                     return middle;
                 if (value < array[middle])
-                    right = middle + 1;
+                {
+                    right = middle - 1; 
+                    steps++; 
+                }
                 if (value > array[middle])
-                    left = middle - 1;                    
+                {
+                    left = middle + 1;
+                    steps++;
+                }
             }
 
             return -1;
@@ -59,11 +72,16 @@ namespace SearchingAlgorithmes
             Console.WriteLine("Linear search:");
             Console.WriteLine("Searching 66");
             int steps = 0;
-            Console.WriteLine($"Found in {steps} steps at index [{LinearSearch(array, 66, ref steps)}]");
+            int index = LinearSearch(array, 66, ref steps);
+            Console.WriteLine($"Found in {steps} steps at index [{index}]");
             Console.WriteLine("\nBinary Search Recursivly:");
-            Console.WriteLine($"Found in at index [{BinarySearchRecursivly(array, 66)}]");
+            steps = 0;
+            index = BinarySearchRecursivly(array, 66, ref steps);
+            Console.WriteLine($"Found in {steps} at index [{index}]");
             Console.WriteLine("\nBinary Searcg Itteratively:");
-            Console.WriteLine($"Found in at index [{BinarySearchItteratively(array, 66)}]");
+            steps = 0;
+            index = BinarySearchItteratively(array, 66,ref steps);
+            Console.WriteLine($"Found in in {steps} steps at index [{index}]");
 
 
         }

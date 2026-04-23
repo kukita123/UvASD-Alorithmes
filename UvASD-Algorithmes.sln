@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraysSortingAlgorithmes", "UvASD-Alorithmes\ArraysSortingAlgorithmes.csproj", "{22946467-6228-4955-A8A5-5326EEAEB19B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchingAlgorithmes", "SearchingAlgorithmes\SearchingAlgorithmes.csproj", "{D46D51E2-DDC4-430B-8CFB-DBA80D508FDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SearchingAlgorithmes", "SearchingAlgorithmes\SearchingAlgorithmes.csproj", "{D46D51E2-DDC4-430B-8CFB-DBA80D508FDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spaces", "spaces\Spaces.csproj", "{4814DFA9-8E6F-4CA9-A1BC-CC801BA4F677}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D46D51E2-DDC4-430B-8CFB-DBA80D508FDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D46D51E2-DDC4-430B-8CFB-DBA80D508FDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D46D51E2-DDC4-430B-8CFB-DBA80D508FDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4814DFA9-8E6F-4CA9-A1BC-CC801BA4F677}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4814DFA9-8E6F-4CA9-A1BC-CC801BA4F677}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4814DFA9-8E6F-4CA9-A1BC-CC801BA4F677}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4814DFA9-8E6F-4CA9-A1BC-CC801BA4F677}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
