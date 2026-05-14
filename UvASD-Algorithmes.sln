@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraysSortingAlgorithmes", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SearchingAlgorithmes", "SearchingAlgorithmes\SearchingAlgorithmes.csproj", "{D46D51E2-DDC4-430B-8CFB-DBA80D508FDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spaces", "spaces\Spaces.csproj", "{4814DFA9-8E6F-4CA9-A1BC-CC801BA4F677}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plateaus", "spaces\Plateaus.csproj", "{4814DFA9-8E6F-4CA9-A1BC-CC801BA4F677}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -10,7 +10,7 @@ namespace UvASD_Alorithmes
     {       
            public static int[] InsertionSortImplementation(int[] array)
             {
-                for (int i = 0; i < array.Length; i++)
+                for (int i = 1; i < array.Length; i++)
                 {
                     int value = array[i];
                     int index = i;

@@ -1,6 +1,7 @@
 ﻿using System;
 
-namespace Spaces
+namespace Plateaus
+
 {
     class Program
     {
@@ -23,15 +24,15 @@ namespace Spaces
             }
             if (startIndex == endIndex)
             {
-                Console.WriteLine("No spaces found");
+                Console.WriteLine("\nNo plateaus found");
             }
             else
             {
-                Console.WriteLine("Indexes: start index: {0}, end index: {1}", startIndex, endIndex);
+                Console.WriteLine("\nIndexes: start index: {0}, end index: {1}", startIndex, endIndex);
                 Console.WriteLine("Value: {0}", value);
             }
         }
-        static void CountSpaces(int[] array)
+        static void CountPlateaus(int[] array)
         {
             int startIndex = 0, endIndex = 0, value = 0;
             int count = 0;
@@ -47,17 +48,17 @@ namespace Spaces
                     }
                     endIndex = i;
                     count++;
-                    Console.WriteLine("Space: start index: {0}, end index: {1}", startIndex, endIndex);
+                    Console.WriteLine("\nPlateau: start index: {0}, end index: {1}", startIndex, endIndex);
                     Console.WriteLine("Value: {0}", value);
                 }                
             }
-            Console.WriteLine("\nSpaces count: {0}", count);
+            Console.WriteLine("\nPlateaus count: {0}", count);
         }
         static void Main(string[] args)
         {
             int[] array = { 7, -8, 13, 2, 3, 3, 7, 7, 7, 61, 7};
             FirstSpace(array);
-            CountSpaces(array);
+            CountPlateaus(array);
         }
     }
 }
